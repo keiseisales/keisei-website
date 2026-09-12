@@ -1,93 +1,267 @@
-<!doctype html><html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<link rel="icon" href="favicon.png"><title>恵星株式会社 | KEISEI Inc. — 不動産賃貸・保有運用</title>
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>恵星株式会社 | KEISEI Inc. — 不動産賃貸・保有運用</title>
 <meta name="description" content="恵星株式会社（KEISEI Inc.）は東京都江戸川区の不動産賃貸業の法人です。大阪市浪速区の桜川ビルを保有・運営しています。法人番号 8011701027653。">
-<link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;600;700&family=Space+Grotesk:wght@400;500;700&family=Noto+Sans+JP:wght@300;400;500;700&display=swap" rel="stylesheet">
+<link rel="icon" href="favicon.png">
+<link rel="apple-touch-icon" href="icon-512.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;700&family=Noto+Sans+JP:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 <style>
-:root{--ink:#101418;--slate:#2A323B;--teal:#4FA3A0;--tealink:#2C7D79;--tealb:#A6E3DF;--paper:#F4F1EA;--paper2:#F7F5F0;--card:#fff;--line:#E7E2D6}
-*{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font-family:Sora,"Noto Sans JP",sans-serif;line-height:1.8}
-.wrap{max-width:1040px;margin:0 auto;padding:0 28px}
-header{background:var(--ink);color:var(--paper)}
+:root{--ink:#101418;--slate:#2A323B;--paper:#F4F1EA;--paper2:#F7F5F0;--card:#FFFFFF;--line:#E7E2D6;--teal:#4FA3A0;--tealink:#2C7D79;--tealb:#A6E3DF}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+html,body{overflow-x:hidden;max-width:100%}
+body{margin:0;background:var(--paper2);color:var(--ink);font-family:Sora,"Noto Sans JP",sans-serif;-webkit-font-smoothing:antialiased}
+img,svg{max-width:100%}
+a{color:var(--tealink);text-decoration:none}
+.wrap{max-width:1080px;margin:0 auto;padding:0 32px}
+.sg{font-family:"Space Grotesk",sans-serif}
+.jp{font-family:"Noto Sans JP",Sora,sans-serif}
+
+/* Header */
+header{border-bottom:1px solid var(--line);background:var(--paper2)}
 nav{display:flex;align-items:center;justify-content:space-between;padding:22px 0}
-.lock{display:flex;align-items:center;gap:14px}.lock svg{width:36px;height:36px}
-.lock .div{width:1px;height:34px;background:rgba(255,255,255,.14)}
-.wm{font-weight:600;letter-spacing:.13em;font-size:18px;line-height:1.1}.tag{font-family:"Space Grotesk";letter-spacing:.34em;font-size:9px;color:var(--teal);text-transform:uppercase}
-nav ul{list-style:none;display:flex;gap:28px;margin:0;padding:0;font-family:"Space Grotesk";font-size:12px;letter-spacing:.12em;text-transform:uppercase}nav a{color:var(--paper);text-decoration:none;opacity:.85}
-.hero{padding:64px 0 72px;position:relative;overflow:hidden}
-.hero .grid{position:absolute;right:-40px;top:20px;width:420px;height:420px;opacity:.9}
-.hero h1{font-family:"Noto Sans JP",Sora,sans-serif;font-weight:500;font-size:40px;line-height:1.35;margin:0 0 14px;max-width:640px}
-.hero p{max-width:560px;font-size:15px;opacity:.85;margin:0 0 28px}
-.hero .en{font-family:"Space Grotesk";letter-spacing:.2em;font-size:11px;color:var(--teal);text-transform:uppercase;margin-bottom:18px}
-.rule{height:1px;background:var(--teal);width:64px;margin:0 0 24px}
-section{padding:64px 0;border-top:1px solid var(--line)}
-h2{font-family:"Space Grotesk";letter-spacing:.3em;font-size:11px;text-transform:uppercase;color:var(--tealink);margin:0 0 8px}
-h3{font-family:"Noto Sans JP",Sora;font-size:26px;font-weight:500;margin:0 0 28px}
-.cols{display:grid;grid-template-columns:1fr 1fr 1fr;gap:24px}
-.card{background:var(--card);border:1px solid var(--line);border-radius:6px;padding:24px}
-.card h4{font-family:"Noto Sans JP";font-size:16px;font-weight:600;margin:0 0 8px}.card p{font-size:14px;margin:0;color:var(--slate)}
-.prop{display:grid;grid-template-columns:1.1fr 1fr;gap:40px;align-items:start}
-.photo{background:var(--ink);border-radius:6px;aspect-ratio:4/3;display:flex;align-items:center;justify-content:center;color:var(--paper);font-family:"Space Grotesk";letter-spacing:.2em;font-size:11px;position:relative;overflow:hidden}
-.photo svg{position:absolute;width:70%;opacity:.35}
-table{width:100%;border-collapse:collapse;font-size:14px}th,td{text-align:left;padding:10px 4px;border-bottom:1px solid var(--line);vertical-align:top}th{width:34%;font-weight:500;color:var(--slate);font-family:"Noto Sans JP"}
-.num{font-family:"Space Grotesk"}
-.contact{background:var(--ink);color:var(--paper)}.contact h2{color:var(--teal)}.contact a{color:var(--tealb);text-decoration:none}.contact .cols{grid-template-columns:1fr 1fr}
-footer{background:var(--ink);color:rgba(244,241,234,.6);font-family:"Space Grotesk";font-size:11px;letter-spacing:.1em;padding:22px 0;border-top:1px solid rgba(255,255,255,.14)}
-footer .wrap{display:flex;justify-content:space-between}
-@media(max-width:760px){.cols,.prop,.contact .cols{grid-template-columns:1fr}.hero h1{font-size:28px}.hero .grid{display:none}nav ul{display:none}}
-</style></head><body>
-<header><div class="wrap"><nav>
-<div class="lock"><svg viewBox="0 0 100 100"><g fill="#fff" fill-opacity=".16"><rect x="12" y="12" width="12" height="12"/><rect x="28" y="12" width="12" height="12"/><rect x="44" y="12" width="12" height="12"/><rect x="60" y="12" width="12" height="12"/><rect x="12" y="28" width="12" height="12"/><rect x="28" y="28" width="12" height="12"/><rect x="44" y="28" width="12" height="12"/><rect x="76" y="28" width="12" height="12"/><rect x="12" y="44" width="12" height="12"/><rect x="28" y="44" width="12" height="12"/><rect x="60" y="44" width="12" height="12"/><rect x="76" y="44" width="12" height="12"/><rect x="12" y="60" width="12" height="12"/><rect x="44" y="60" width="12" height="12"/><rect x="60" y="60" width="12" height="12"/><rect x="76" y="60" width="12" height="12"/><rect x="28" y="76" width="12" height="12"/><rect x="44" y="76" width="12" height="12"/><rect x="60" y="76" width="12" height="12"/><rect x="76" y="76" width="12" height="12"/></g><g fill="#4FA3A0"><rect x="12" y="76" width="12" height="12"/><rect x="28" y="60" width="12" height="12"/><rect x="44" y="44" width="12" height="12"/><rect x="60" y="28" width="12" height="12"/></g><rect x="76" y="12" width="12" height="12" fill="#A6E3DF"/></svg><div class="div"></div><div><div class="wm">KEISEI</div><div class="tag">Real Estate · Investment</div></div></div>
-<ul><li><a href="#service">事業内容</a></li><li><a href="#property">保有物件</a></li><li><a href="#company">会社概要</a></li><li><a href="#contact">お問い合わせ</a></li></ul>
+.lock{display:flex;align-items:center;gap:14px}
+.lock svg{width:36px;height:36px;display:block}
+.lock .vr{width:1px;height:34px;background:var(--line)}
+.wm{font-weight:600;letter-spacing:.13em;font-size:17px;line-height:1.1;color:var(--ink)}
+.tag{font-family:"Space Grotesk",sans-serif;letter-spacing:.34em;font-size:9px;color:var(--tealink);text-transform:uppercase;margin-top:3px}
+.menu{display:flex;gap:32px;font-family:"Space Grotesk",sans-serif;font-size:12px;letter-spacing:.12em;text-transform:uppercase;align-items:center}
+.menu a{color:var(--slate)}
+.menu a:hover{color:var(--tealink)}
+.menu a.btn{color:var(--paper);background:var(--ink);padding:9px 18px;border-radius:6px}
+.menu a.btn:hover{color:var(--paper);background:var(--slate)}
+.burger{display:none}
+
+/* Hero */
+.hero{background:var(--paper2)}
+.hero{overflow:hidden}
+.hero .wrap{padding:96px 32px 104px;position:relative}
+.hero .mark{position:absolute;right:8px;top:72px;width:340px;height:340px;opacity:.5;pointer-events:none}
+.hero .inner{position:relative}
+.kicker{font-family:"Space Grotesk",sans-serif;letter-spacing:.24em;font-size:11px;color:var(--tealink);text-transform:uppercase;margin-bottom:24px}
+h1{font-family:"Noto Sans JP",Sora,sans-serif;font-weight:500;font-size:46px;line-height:1.4;margin:0 0 28px;max-width:780px;color:var(--ink)}
+h1 .br-m{display:none}
+.rule{height:2px;width:64px;background:var(--teal);margin:0 0 28px}
+.lead{max-width:560px;font-size:15px;line-height:2.1;color:var(--slate);margin:0}
+
+/* Sections */
+section{padding:80px 0;border-top:1px solid var(--line)}
+section.last{padding-bottom:96px}
+.grid2{display:grid;grid-template-columns:260px 1fr;gap:44px;align-items:start}
+.label{font-family:"Space Grotesk",sans-serif;letter-spacing:.3em;font-size:11px;text-transform:uppercase;color:var(--tealink);margin:0 0 10px}
+h3{font-family:"Noto Sans JP",Sora,sans-serif;font-size:26px;font-weight:500;margin:0}
+h3.mb{margin-bottom:24px}
+.cards3{display:grid;grid-template-columns:1fr 1fr 1fr;gap:20px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:6px;padding:28px 24px}
+.card h4{font-family:"Noto Sans JP",Sora,sans-serif;font-size:15px;font-weight:600;margin:0 0 10px;color:var(--ink)}
+.card p{font-size:13px;line-height:1.9;margin:0;color:var(--slate)}
+.photo{background:var(--ink);border-radius:6px;aspect-ratio:1/1;display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden}
+.photo svg{position:absolute;width:70%;height:70%;opacity:.4}
+.photo span{position:relative;color:var(--paper);font-family:"Space Grotesk",sans-serif;letter-spacing:.2em;font-size:10px}
+table{width:100%;border-collapse:collapse;font-size:14px;line-height:1.8;table-layout:fixed}
+td{overflow-wrap:anywhere;word-break:break-word}
+th,td{padding:13px 4px;border-bottom:1px solid var(--line);vertical-align:top;text-align:left}
+th{width:26%;font-weight:500;color:var(--slate);font-family:"Noto Sans JP",Sora,sans-serif}
+.en{font-size:12.5px;line-height:1.9;margin:0;color:var(--slate);font-family:Sora,sans-serif}
+.en-card{display:none}
+.cards2{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.ccard{border-radius:6px;padding:32px 28px}
+.ccard.dark{background:var(--ink);color:var(--paper)}
+.ccard.light{background:var(--card);border:1px solid var(--line)}
+.ccard .lb{font-family:"Space Grotesk",sans-serif;font-size:10px;letter-spacing:.24em;text-transform:uppercase;margin-bottom:16px}
+.ccard.dark .lb{color:var(--teal)}
+.ccard.light .lb{color:var(--tealink)}
+.ccard p{font-size:13px;line-height:1.9;margin:0 0 14px}
+.ccard.dark p{color:rgba(244,241,234,.85)}
+.ccard.light p{color:var(--slate)}
+.ccard .mail{font-family:"Space Grotesk",sans-serif;font-size:17px;margin:0 0 10px}
+.ccard .mail a{color:var(--tealb)}
+.ccard .mail a:hover{text-decoration:underline}
+.ccard .note{font-size:11.5px;color:rgba(244,241,234,.6);margin:0}
+.ccard .tel{font-size:13.5px;line-height:1.9;margin:0;color:var(--ink)}
+
+footer{border-top:1px solid var(--line);background:var(--paper2)}
+footer .wrap{padding:20px 32px;display:flex;justify-content:space-between;font-family:"Space Grotesk",sans-serif;font-size:11px;letter-spacing:.1em;color:var(--slate)}
+footer .tl{color:var(--tealink)}
+
+/* Tablet */
+@media (max-width:1000px){
+  .grid2{grid-template-columns:220px 1fr;gap:32px}
+  .cards3{grid-template-columns:1fr 1fr}
+  .hero .mark{width:260px;height:260px;right:-20px}
+  h1{font-size:38px}
+}
+/* Mobile (3a) */
+@media (max-width:760px){
+  .wrap{padding:0 20px}
+  nav{padding:16px 0}
+  .lock{gap:12px}.lock svg{width:32px;height:32px}.lock .vr{display:none}
+  .wm{font-size:15px}.tag{letter-spacing:.28em;font-size:8px;margin-top:2px}
+  .menu{display:none}
+  .burger{display:flex;flex-direction:column;gap:5px;padding:6px 2px;background:none;border:0;cursor:pointer}
+  .burger i{display:block;width:20px;height:1.5px;background:var(--ink)}
+  header.open .menu{display:flex;flex-direction:column;align-items:flex-start;gap:14px;padding:0 0 18px}
+  .hero .wrap{padding:56px 20px 64px;overflow:hidden}
+  .hero .mark{right:-48px;top:20px;width:190px;height:190px;opacity:.45}
+  .kicker{letter-spacing:.22em;font-size:10px;margin-bottom:18px}
+  h1{font-size:27px;line-height:1.55;margin:0 0 18px}
+  h1 .br-m{display:inline}
+  .rule{width:52px;margin:0 0 18px}
+  .lead{font-size:13.5px;line-height:2}
+  section{padding:56px 0}
+  section.last{padding-bottom:40px}
+  .grid2{grid-template-columns:1fr;gap:22px}
+  .label{font-size:10px;margin:0 0 8px}
+  h3{font-size:21px}h3.mb{margin-bottom:22px}
+  .cards3{grid-template-columns:1fr;gap:14px}
+  .card{padding:24px 20px}.card h4{margin:0 0 8px}.card h4 br{display:none}
+  .photo{aspect-ratio:4/3;margin-bottom:22px}.photo svg{width:64%;height:64%}.photo span{letter-spacing:.22em}
+  table{font-size:12.5px;line-height:1.7}
+  th,td{padding:10px 2px}th{width:30%}
+  .en{display:none}
+  .en-card{display:block;background:var(--card);border:1px solid var(--line);border-radius:6px;padding:22px 20px;margin-top:20px}
+  .en-card .lb{font-family:"Space Grotesk",sans-serif;font-size:10px;letter-spacing:.24em;color:var(--tealink);text-transform:uppercase;margin-bottom:12px}
+  .en-card p{font-size:12.5px;line-height:1.9;margin:0;color:var(--slate);font-family:Sora,sans-serif}
+  .cards2{grid-template-columns:1fr;gap:14px}
+  .ccard{padding:26px 22px}.ccard .lb{margin-bottom:14px}.ccard p{margin:0 0 12px}
+  .ccard .mail{font-size:15px;margin:0 0 8px}.ccard .note{font-size:11px}.ccard .tel{font-size:13px}
+  footer .wrap{padding:18px 20px;flex-direction:column;gap:4px;font-size:10px}
+}
+</style>
+</head>
+<body>
+
+<header id="top">
+<div class="wrap">
+<nav>
+<div class="lock">
+<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="KEISEI"><g fill="#101418" fill-opacity="0.14"><rect x="12" y="12" width="12" height="12"/><rect x="28" y="12" width="12" height="12"/><rect x="44" y="12" width="12" height="12"/><rect x="60" y="12" width="12" height="12"/><rect x="12" y="28" width="12" height="12"/><rect x="28" y="28" width="12" height="12"/><rect x="44" y="28" width="12" height="12"/><rect x="76" y="28" width="12" height="12"/><rect x="12" y="44" width="12" height="12"/><rect x="28" y="44" width="12" height="12"/><rect x="60" y="44" width="12" height="12"/><rect x="76" y="44" width="12" height="12"/><rect x="12" y="60" width="12" height="12"/><rect x="44" y="60" width="12" height="12"/><rect x="60" y="60" width="12" height="12"/><rect x="76" y="60" width="12" height="12"/><rect x="28" y="76" width="12" height="12"/><rect x="44" y="76" width="12" height="12"/><rect x="60" y="76" width="12" height="12"/><rect x="76" y="76" width="12" height="12"/></g><g fill="#2C7D79"><rect x="12" y="76" width="12" height="12"/><rect x="28" y="60" width="12" height="12"/><rect x="44" y="44" width="12" height="12"/><rect x="60" y="28" width="12" height="12"/></g><rect x="76" y="12" width="12" height="12" fill="#4FA3A0"/></svg>
+<div class="vr"></div>
+<div><div class="wm">KEISEI</div><div class="tag">Real Estate · Investment</div></div>
+</div>
+<button class="burger" aria-label="メニュー" onclick="document.getElementById('top').classList.toggle('open')"><i></i><i></i></button>
+<div class="menu">
+<a href="#service">事業内容</a>
+<a href="#property">保有物件</a>
+<a href="#company">会社概要</a>
+<a href="#contact" class="btn">お問い合わせ</a>
+</div>
 </nav>
+</div>
+</header>
+
 <div class="hero">
-<svg class="grid" viewBox="0 0 100 100"><g fill="#fff" fill-opacity=".16"><rect x="12" y="12" width="12" height="12"/><rect x="28" y="12" width="12" height="12"/><rect x="44" y="12" width="12" height="12"/><rect x="60" y="12" width="12" height="12"/><rect x="12" y="28" width="12" height="12"/><rect x="28" y="28" width="12" height="12"/><rect x="44" y="28" width="12" height="12"/><rect x="76" y="28" width="12" height="12"/><rect x="12" y="44" width="12" height="12"/><rect x="28" y="44" width="12" height="12"/><rect x="60" y="44" width="12" height="12"/><rect x="76" y="44" width="12" height="12"/><rect x="12" y="60" width="12" height="12"/><rect x="44" y="60" width="12" height="12"/><rect x="60" y="60" width="12" height="12"/><rect x="76" y="60" width="12" height="12"/><rect x="28" y="76" width="12" height="12"/><rect x="44" y="76" width="12" height="12"/><rect x="60" y="76" width="12" height="12"/><rect x="76" y="76" width="12" height="12"/></g><g fill="#4FA3A0"><rect x="12" y="76" width="12" height="12"/><rect x="28" y="60" width="12" height="12"/><rect x="44" y="44" width="12" height="12"/><rect x="60" y="28" width="12" height="12"/></g><rect x="76" y="12" width="12" height="12" fill="#A6E3DF"/></svg>
-<div class="en">Keisei Inc. — Tokyo, Japan</div>
-<h1>収益不動産を、<br>長期の視点で保有し、運営する。</h1>
+<div class="wrap">
+<svg class="mark" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><g fill="#101418" fill-opacity="0.14"><rect x="12" y="12" width="12" height="12"/><rect x="28" y="12" width="12" height="12"/><rect x="44" y="12" width="12" height="12"/><rect x="60" y="12" width="12" height="12"/><rect x="12" y="28" width="12" height="12"/><rect x="28" y="28" width="12" height="12"/><rect x="44" y="28" width="12" height="12"/><rect x="76" y="28" width="12" height="12"/><rect x="12" y="44" width="12" height="12"/><rect x="28" y="44" width="12" height="12"/><rect x="60" y="44" width="12" height="12"/><rect x="76" y="44" width="12" height="12"/><rect x="12" y="60" width="12" height="12"/><rect x="44" y="60" width="12" height="12"/><rect x="60" y="60" width="12" height="12"/><rect x="76" y="60" width="12" height="12"/><rect x="28" y="76" width="12" height="12"/><rect x="44" y="76" width="12" height="12"/><rect x="60" y="76" width="12" height="12"/><rect x="76" y="76" width="12" height="12"/></g><g fill="#2C7D79"><rect x="12" y="76" width="12" height="12"/><rect x="28" y="60" width="12" height="12"/><rect x="44" y="44" width="12" height="12"/><rect x="60" y="28" width="12" height="12"/></g><rect x="76" y="12" width="12" height="12" fill="#4FA3A0"/></svg>
+<div class="inner">
+<div class="kicker">Keisei Inc. — Tokyo, Japan</div>
+<h1>収益不動産を、<br>長期の視点で<span class="br-m"><br></span>保有し、運営する。</h1>
 <div class="rule"></div>
-<p>恵星株式会社は、東京都江戸川区に本店を置く不動産賃貸業の法人です。大阪市浪速区の一棟テナントビル「桜川ビル」を保有し、管理会社と協働して安定した賃貸運営を行っています。</p>
-</div></div></header>
+<p class="lead">恵星株式会社は、東京都江戸川区に本店を置く不動産賃貸業の法人です。大阪市浪速区の一棟テナントビル「桜川ビル」を保有し、管理会社と協働して安定した賃貸運営を行っています。</p>
+</div>
+</div>
+</div>
 
-<section id="service"><div class="wrap"><h2>Service</h2><h3>事業内容</h3>
-<div class="cols">
-<div class="card"><h4>不動産の保有・賃貸運営</h4><p>一棟収益ビルを取得し、事務所・店舗テナントへ賃貸。管理・集金は専門の管理会社に委託し、当社は資産の保有と資金管理、長期の維持・修繕計画を担います。</p></div>
-<div class="card"><h4>不動産投資・運用</h4><p>収益性と立地、建物の健全性を重視した物件選定。無理のない資金計画のもと、長期保有を前提とした運用を行います。</p></div>
-<div class="card"><h4>宿泊施設の企画（将来）</h4><p>定款上、ホテル・旅館・簡易宿所・民泊の経営および管理業務を事業目的に含めており、保有物件の用途に応じて検討します。</p></div>
-</div></div></section>
+<main class="wrap">
 
-<section id="property"><div class="wrap"><h2>Property</h2><h3>保有物件</h3>
-<div class="prop">
-<div class="photo"><svg viewBox="0 0 100 100"><g fill="#fff" fill-opacity=".16"><rect x="12" y="12" width="12" height="12"/><rect x="28" y="12" width="12" height="12"/><rect x="44" y="12" width="12" height="12"/><rect x="60" y="12" width="12" height="12"/><rect x="12" y="28" width="12" height="12"/><rect x="28" y="28" width="12" height="12"/><rect x="44" y="28" width="12" height="12"/><rect x="76" y="28" width="12" height="12"/><rect x="12" y="44" width="12" height="12"/><rect x="28" y="44" width="12" height="12"/><rect x="60" y="44" width="12" height="12"/><rect x="76" y="44" width="12" height="12"/><rect x="12" y="60" width="12" height="12"/><rect x="44" y="60" width="12" height="12"/><rect x="60" y="60" width="12" height="12"/><rect x="76" y="60" width="12" height="12"/><rect x="28" y="76" width="12" height="12"/><rect x="44" y="76" width="12" height="12"/><rect x="60" y="76" width="12" height="12"/><rect x="76" y="76" width="12" height="12"/></g><g fill="#4FA3A0"><rect x="12" y="76" width="12" height="12"/><rect x="28" y="60" width="12" height="12"/><rect x="44" y="44" width="12" height="12"/><rect x="60" y="28" width="12" height="12"/></g></svg><span>SAKURAGAWA BLDG. — PHOTO</span></div>
+<section id="service">
+<div class="grid2">
+<div>
+<div class="label">01 — Service</div>
+<h3>事業内容</h3>
+</div>
+<div class="cards3">
+<div class="card"><h4>不動産の保有・<br>賃貸運営</h4><p>一棟収益ビルを取得し、事務所・店舗テナントへ賃貸。管理・集金は管理会社に委託し、当社は資産の保有と資金管理、長期の維持・修繕計画を担います。</p></div>
+<div class="card"><h4>不動産投資・<br>運用</h4><p>収益性と立地、建物の健全性を重視した物件選定。無理のない資金計画のもと、長期保有を前提とした運用を行います。</p></div>
+<div class="card"><h4>宿泊施設の企画<br>（将来）</h4><p>定款上、ホテル・旅館・簡易宿所・民泊の経営および管理業務を事業目的に含めており、保有物件の用途に応じて検討します。</p></div>
+</div>
+</div>
+</section>
+
+<section id="property">
+<div class="grid2">
+<div>
+<div class="label">02 — Property</div>
+<h3 class="mb">保有物件</h3>
+<div class="photo">
+<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><g fill="#FFFFFF" fill-opacity="0.16"><rect x="12" y="12" width="12" height="12"/><rect x="28" y="12" width="12" height="12"/><rect x="44" y="12" width="12" height="12"/><rect x="60" y="12" width="12" height="12"/><rect x="12" y="28" width="12" height="12"/><rect x="28" y="28" width="12" height="12"/><rect x="44" y="28" width="12" height="12"/><rect x="76" y="28" width="12" height="12"/><rect x="12" y="44" width="12" height="12"/><rect x="28" y="44" width="12" height="12"/><rect x="60" y="44" width="12" height="12"/><rect x="76" y="44" width="12" height="12"/><rect x="12" y="60" width="12" height="12"/><rect x="44" y="60" width="12" height="12"/><rect x="60" y="60" width="12" height="12"/><rect x="76" y="60" width="12" height="12"/><rect x="28" y="76" width="12" height="12"/><rect x="44" y="76" width="12" height="12"/><rect x="60" y="76" width="12" height="12"/><rect x="76" y="76" width="12" height="12"/></g><g fill="#4FA3A0"><rect x="12" y="76" width="12" height="12"/><rect x="28" y="60" width="12" height="12"/><rect x="44" y="44" width="12" height="12"/><rect x="60" y="28" width="12" height="12"/></g><rect x="76" y="12" width="12" height="12" fill="#A6E3DF"/></svg>
+<span>PHOTO</span>
+</div>
+</div>
 <table>
+<tbody>
 <tr><th>名称</th><td>桜川ビル（ForYou桜川ビル）</td></tr>
 <tr><th>所在地</th><td>〒556-0022 大阪市浪速区桜川四丁目3番22号</td></tr>
-<tr><th>構造・規模</th><td>鉄骨造 陸屋根 10階建</td></tr>
-<tr><th>延床面積</th><td class="num">574.59 ㎡</td></tr>
-<tr><th>竣工</th><td class="num">1991年5月</td></tr>
+<tr><th>構造・規模</th><td>鉄骨造 陸屋根 10階建／延床 <span class="sg">574.59 ㎡</span></td></tr>
+<tr><th>竣工・取得</th><td class="sg">1991年5月 竣工 ／ 2024年12月 取得</td></tr>
 <tr><th>用途</th><td>事務所・店舗（テナント10区画）</td></tr>
-<tr><th>取得</th><td class="num">2024年12月</td></tr>
 <tr><th>交通</th><td>阪神なんば線「桜川」駅 徒歩4分／大阪メトロ「桜川」駅 徒歩7分／南海汐見橋線「汐見橋」駅 徒歩3分</td></tr>
-<tr><th>管理会社</th><td>株式会社For You（宅地建物取引業 国土交通大臣(2)第9153号）<br>空室・ご入居のお問い合わせ：For You 桜川店 06-6599-9868</td></tr>
-</table></div></div></section>
+<tr><th>管理会社</th><td>株式会社For You（宅地建物取引業 国土交通大臣(2)第9153号）<br>空室・ご入居のお問い合わせ：For You 桜川店 <span class="sg">06-6599-9868</span></td></tr>
+</tbody>
+</table>
+</div>
+</section>
 
-<section id="company"><div class="wrap"><h2>Company</h2><h3>会社概要</h3>
-<div class="prop">
+<section id="company">
+<div class="grid2">
+<div>
+<div class="label">03 — Company</div>
+<h3 class="mb">会社概要</h3>
+<p class="en">KEISEI Inc. is a Tokyo-based real-estate holding company established in September 2024. We own and operate the Sakuragawa Building, a 10-storey office and retail property in Naniwa-ku, Osaka. Corporate number 8011701027653.</p>
+</div>
+<div>
 <table>
+<tbody>
 <tr><th>商号</th><td>恵星株式会社（KEISEI Inc.）</td></tr>
-<tr><th>法人番号</th><td class="num">8011701027653</td></tr>
-<tr><th>設立</th><td class="num">2024年9月17日</td></tr>
-<tr><th>資本金</th><td class="num">300万円</td></tr>
+<tr><th>法人番号</th><td class="sg">8011701027653</td></tr>
+<tr><th>設立・資本金</th><td><span class="sg">2024年9月17日</span>設立 ／ 資本金 <span class="sg">300万円</span></td></tr>
 <tr><th>代表取締役</th><td>朴 時昱（PIAO SHIYU）</td></tr>
 <tr><th>本店所在地</th><td>〒132-0035 東京都江戸川区平井五丁目17番1号</td></tr>
 <tr><th>事業内容</th><td>不動産の売買、賃貸、仲介、保有、管理及び運用、不動産投資コンサルティング／ホテル・旅館・簡易宿所・民泊の経営及び管理</td></tr>
 <tr><th>決算期</th><td>8月</td></tr>
 <tr><th>取引金融機関</th><td>GMOあおぞらネット銀行、住信SBIネット銀行</td></tr>
+</tbody>
 </table>
-<div class="card"><h4>English</h4><p>KEISEI Inc. is a Tokyo-based real-estate holding company established in September 2024. We own and operate the Sakuragawa Building, a 10-storey office and retail property in Naniwa-ku, Osaka, working with a licensed property-management partner. Corporate number 8011701027653.</p></div>
-</div></div></section>
+<div class="en-card"><div class="lb">English</div><p>KEISEI Inc. is a Tokyo-based real-estate holding company established in September 2024. We own and operate the Sakuragawa Building, a 10-storey office and retail property in Naniwa-ku, Osaka. Corporate number 8011701027653.</p></div>
+</div>
+</div>
+</section>
 
-<section id="contact" class="contact"><div class="wrap"><h2>Contact</h2><h3 style="color:var(--paper)">お問い合わせ</h3>
-<div class="cols">
-<div><p style="font-size:14px;opacity:.85">会社に関するお問い合わせ、取引のご相談はメールにてお願いいたします。</p><p class="num" style="font-size:18px"><a href="mailto:keisei.sales@gmail.com">keisei.sales@gmail.com</a></p><p style="font-size:12px;opacity:.6">※ 電話でのお問い合わせは受け付けておりません。</p></div>
-<div><p style="font-size:14px;opacity:.85">桜川ビルの空室・ご入居・設備に関するお問い合わせは、管理会社へお願いいたします。</p><p style="font-size:14px">株式会社For You 大阪本社 不動産事業部<br><span class="num">TEL 06-6606-8188</span>（9:00〜18:00、日祝除く）<br>〒556-0011 大阪市浪速区難波中三丁目5番17号</p></div>
-</div></div></section>
-<footer><div class="wrap"><span>© 2026 KEISEI Inc. / 恵星株式会社</span><span>REAL ESTATE · INVESTMENT</span></div></footer>
-</body></html>
+<section id="contact" class="last">
+<div class="grid2">
+<div>
+<div class="label">04 — Contact</div>
+<h3>お問い合わせ</h3>
+</div>
+<div class="cards2">
+<div class="ccard dark">
+<div class="lb">Corporate</div>
+<p>会社に関するお問い合わせ、取引のご相談はメールにて。</p>
+<p class="mail"><a href="mailto:keisei.sales@gmail.com">keisei.sales@gmail.com</a></p>
+<p class="note">※ 電話でのお問い合わせは受け付けておりません。</p>
+</div>
+<div class="ccard light">
+<div class="lb">Property — 桜川ビル</div>
+<p>空室・ご入居・設備に関するお問い合わせは管理会社へ。</p>
+<p class="tel">株式会社For You 大阪本社 不動産事業部<br><span class="sg">TEL 06-6606-8188</span>（9:00〜18:00、日祝除く）</p>
+</div>
+</div>
+</div>
+</section>
+
+</main>
+
+<footer>
+<div class="wrap">
+<span>© 2026 KEISEI Inc. / 恵星株式会社</span>
+<span class="tl">REAL ESTATE · INVESTMENT</span>
+</div>
+</footer>
+
+</body>
+</html>
